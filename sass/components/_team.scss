@@ -1,8 +1,9 @@
-.team {
+/*.team {
   background-color: var(--background-color);
 }
 .team-list {
   display: flex;
+  flex-direction: column;
   gap: 30px;
 }
 .team-item {
@@ -57,3 +58,4 @@
     background-color: var(--accent-color);
   }
 }
+*/
