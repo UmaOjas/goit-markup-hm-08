@@ -88,6 +88,10 @@ body {
   list-style-type: none;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
