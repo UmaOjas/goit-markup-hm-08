@@ -94,6 +94,13 @@ body {
 
 .header {
   border-bottom: 1px solid #ececec;
+  display: flex;
+  position: relative;
+}
+@media screen and (max-width: 1199px) {
+  .header {
+    width: 100%;
+  }
 }
 
 .pages__link {
@@ -152,24 +159,48 @@ body {
 .nav__list {
   display: flex;
   gap: 50px;
+  padding-left: 0px;
 }
 
 .header__nav {
   display: flex;
   align-items: center;
-  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
 }
 
 .header__contact {
   display: flex;
+  flex-direction: column;
+  padding-top: 21px;
   margin-left: auto;
-  gap: 50px;
+  gap: 10px;
   align-items: center;
-  display: none;
+}
+@media screen and (max-width: 767px) {
+  .header__contact {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__contact {
+    gap: 50px;
+    flex-direction: row;
+    padding-top: 0px;
+  }
 }
 
 .header__container {
   display: flex;
+  padding-left: 0px;
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    padding: 0px;
+  }
 }
 
 .contact__icon {
@@ -181,6 +212,14 @@ body {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .burger-btn-open {
+    position: absolute;
+    top: 22px;
+    right: 23px;
+  }
+}
+
 .btn-menu {
   display: block;
   margin-left: auto;
@@ -188,13 +227,17 @@ body {
   height: 40px;
   border: none;
 }
+@media screen and (min-width: 768px) {
+  .btn-menu {
+    display: none;
+  }
+}
 
 .header-menu {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 0px;
 }
 
 .burger-mobile {
@@ -211,6 +254,11 @@ body {
   padding-top: 21px;
   padding-bottom: 48px;
   padding-left: 40px;
+}
+@media screen and (min-width: 768px) {
+  .burger-mobile {
+    display: none;
+  }
 }
 
 .burger__item {
@@ -286,9 +334,14 @@ body {
 }
 
 .header__logo {
-  margin-right: 92px;
+  margin-right: 88px;
   padding-top: 24px;
   padding-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .footer-logo {
@@ -311,6 +364,12 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
 }
+@media screen and (min-width: 1200px) {
+  .supreme__hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
   color: var(--basic-color);
@@ -323,6 +382,13 @@ body {
   max-width: 360px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+    max-width: 696px;
+  }
 }
 
 .text__container {

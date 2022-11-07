@@ -12,9 +12,12 @@
   color: var(--basic-color);
 }
 .header__logo {
-  margin-right: 92px;
+  margin-right: 88px;
   padding-top: 24px;
   padding-bottom: 25px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .footer-logo {
   display: block;
