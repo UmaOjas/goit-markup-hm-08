@@ -20,11 +20,98 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__container">
-        <nav class="nav header__nav">
-          <a class="link logo header__logo" href="./index.html" lang="en"
-            >Web<span class="logo--dark">Studio</span></a
+      <div class="header-menu">
+        <a class="link logo header__logo" href="./index.html" lang="en"
+          >Web<span class="logo--dark">Studio</span></a
+        >
+        <button
+          class="btn-menu burger-btn-open"
+          aria-expanded="false"
+          type="button"
+          data-menu-open
+        >
+          <svg
+            class="icon-open"
+            width="24"
+            height="16"
+            aria-label="перемикач мобільного меню"
           >
+            <use class="" href="./images/icons.svg#icon-call"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="container burger-mobile is-hidden" data-menu>
+        <div class="mobile-pages">
+          <button
+            class="btn-menu burger-btn-close"
+            aria-expanded="false"
+            type="button"
+            data-menu-close
+          >
+            <svg
+              class="icon-cross"
+              width="24"
+              height="16"
+              aria-label="перемикач мобільного меню"
+            >
+              <use class="" href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </button>
+          <nav class="nav burger__nav">
+            <ul class="list burger__list">
+              <li class="burger__item">
+                <a
+                  class="link burger__link burger__link--current"
+                  href="./index.html"
+                  >Студія</a
+                >
+              </li>
+              <li class="burger__item">
+                <a class="link burger__link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="burger__item">
+                <a class="link burger__link" href="#">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-links">
+          <ul class="list burger__contact burger-telephone">
+            <li class="burger-contact__list">
+              <a class="link burger-contact__item" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="burger-contact__list burger-mail">
+              <a
+                class="link burger-contact__item"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="soc-link">
+            <li class="burger-soc-link">
+              <a href="#" class="burger-soc">Instagram</a>
+            </li>
+            <li class="burger-soc-link">
+              <a href="#" class="burger-soc">Twitter</a>
+            </li>
+            <li class="burger-soc-link">
+              <a href="#" class="burger-soc">Facebook</a>
+            </li>
+            <li class="burger-soc-link">
+              <a href="#" class="burger-soc">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- <div class="container header__container">
+        <nav class="nav header__nav">
           <ul class="list pages nav__list">
             <li class="pages__item">
               <a
@@ -59,7 +146,7 @@
             >
           </li>
         </ul>
-      </div>
+      </div> -->
     </header>
     <main class="supreme">
       <section class="hero supreme__hero">
@@ -597,6 +684,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

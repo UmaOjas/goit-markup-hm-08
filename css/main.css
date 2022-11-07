@@ -153,6 +153,7 @@ body {
 .header__nav {
   display: flex;
   align-items: center;
+  display: none;
 }
 
 .header__contact {
@@ -160,6 +161,7 @@ body {
   margin-left: auto;
   gap: 50px;
   align-items: center;
+  display: none;
 }
 
 .header__container {
@@ -173,6 +175,94 @@ body {
 }
 .contact__icon:hover, .contact__icon:focus {
   fill: var(--accent-color);
+}
+
+.btn-menu {
+  display: block;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.burger-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  background-color: var(--second-basic-color);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  padding-top: 21px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+}
+
+.burger__item {
+  margin-bottom: 32px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.burger__link--current {
+  color: var(--accent-color);
+}
+
+.burger-telephone {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.burger-mail {
+  margin-top: 32px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--small-text-color);
+}
+
+.burger-soc-link {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.burger-soc-link:not(:last-child):after {
+  content: " ";
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.soc-link {
+  display: flex;
+  margin-top: 64px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
 }
 
 .logo {
@@ -616,18 +706,15 @@ body {
 @media screen and (min-width: 768px) {
   .form-field {
     flex-direction: column;
+    align-items: center;
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .form-field {
-    align-items: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .form-field {
     justify-content: flex-start;
+    align-items: flex-start;
     flex-wrap: nowrap;
     margin-right: 12px;
   }
@@ -658,11 +745,13 @@ body {
 @media screen and (min-width: 768px) {
   .form-field input {
     width: 450px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
   .form-field input {
     width: 358px;
+    margin-bottom: 0px;
   }
 }
 .form-field input:hover, .form-field input:focus {
