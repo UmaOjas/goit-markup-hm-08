@@ -74,10 +74,8 @@
 .header__contact {
   display: flex;
   flex-direction: column;
-  padding-top: 21px;
   margin-left: auto;
   gap: 10px;
-  align-items: center;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -90,6 +88,7 @@
 .header__container {
   display: flex;
   padding-left: 0px;
+  align-items: center;
   @media screen and (min-width: 1200px) {
     padding: 0px;
   }
@@ -106,8 +105,15 @@
 .burger-btn-open {
   @media screen and (max-width: 767px) {
     position: absolute;
-    top: 22px;
-    right: 23px;
+    top: 10px;
+    right: 15px;
+  }
+}
+.burger-btn-close {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 10px;
+    right: 15px;
   }
 }
 .btn-menu {
@@ -116,10 +122,12 @@
   width: 40px;
   height: 40px;
   border: none;
+  background-color: transparent;
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
+
 // .burger-btn-open {
 //   width: 40px;
 //   height: 40px;

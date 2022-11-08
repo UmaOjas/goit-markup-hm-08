@@ -36,7 +36,7 @@
             height="16"
             aria-label="перемикач мобільного меню"
           >
-            <use class="" href="./images/icons.svg#icon-call"></use>
+            <use class="" href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
       </div>
@@ -54,7 +54,7 @@
               height="16"
               aria-label="перемикач мобільного меню"
             >
-              <use class="" href="./images/icons.svg#icon-mail"></use>
+              <use class="" href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
           <nav class="nav burger__nav">
@@ -256,16 +256,35 @@
           <h2 class="studio-title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-item">
-              <img
-                srcset="
-                  ./images/productdesigner.jpg    1x,
-                  ./images/productdesigner-2x.jpg 2x
-                "
-                src="./images/productdesigner.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-                class="team-pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/productdesigner-desc.jpg    1x,
+                    ./images/productdesigner-desc-x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/productdesigner-tab.jpg    1x,
+                    ./images/productdesigner-tab-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/productdesigner-mob.jpg    1x,
+                    ./images/productdesigner-mob-x2.jpg 2x
+                  "
+                  media="(man-width: 767px)"
+                />
+                <img
+                  src="./images/productdesigner.jpg"
+                  alt="Ігор Дем'яненко"
+                  width="450"
+                  class="team-pic"
+                />
+              </picture>
               <h3 class="team-name">Ігор Дем'яненко</h3>
               <p class="team-text" lang="en">Product designer</p>
               <ul class="team-links">
@@ -320,16 +339,35 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                  ./images/frontenddeveloper.jpg    1x,
-                  ./images/frontenddeveloper-2x.jpg 2x
-                "
-                src="./images/frontenddeveloper.jpg"
-                alt="Ольга Рєпіна"
-                width="270"
-                class="team-pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/frontenddeveloper-desc.jpg    1x,
+                    ./images/frontenddeveloper-desc-x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontenddeveloper-tab.jpg    1x,
+                    ./images/frontenddeveloper-tab-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontenddeveloper-mob.jpg    1x,
+                    ./images/frontenddeveloper-mob-x2.jpg 2x
+                  "
+                  media="(man-width: 767px)"
+                />
+                <img
+                  src="./images/frontenddeveloper.jpg"
+                  alt="Ольга Рєпіна"
+                  width="450"
+                  class="team-pic"
+                />
+              </picture>
               <h3 class="team-name">Ольга Рєпіна</h3>
               <p class="team-text" lang="en">Frontend developer</p>
               <ul class="team-links">
@@ -384,13 +422,35 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                srcset="./images/marketing.jpg 1x, ./images/marketing-2x.jpg 2x"
-                src="./images/marketing.jpg"
-                alt="Микола Тарасов"
-                width="270"
-                class="team-pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/marketing-desc.jpg    1x,
+                    ./images/marketing-desc-x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing-tab.jpg    1x,
+                    ./images/marketing-tab-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing-mob.jpg    1x,
+                    ./images/marketing-mob-x2.jpg 2x
+                  "
+                  media="(man-width: 767px)"
+                />
+                <img
+                  src="./images/marketing.jpg"
+                  alt="Микола Тарасов"
+                  width="450"
+                  class="team-pic"
+                />
+              </picture>
               <h3 class="team-name">Микола Тарасов</h3>
               <p class="team-text" lang="en">Marketing</p>
               <ul class="team-links">
@@ -445,16 +505,35 @@
               </ul>
             </li>
             <li class="team-item">
-              <img
-                srcset="
-                  ./images/uidesigner.jpg    1x,
-                  ./images/uidesigner-2x.jpg 2x
-                "
-                src="./images/uidesigner.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
-                class="team-pic"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/uidesigner-desc.jpg    1x,
+                    ./images/uidesigner-desc-x2.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/uidesigner.jpg        1x,
+                    ./images/uidesigner-tab-x2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/uidesigner-mob.jpg    1x,
+                    ./images/uidesigner-mob-x2.jpg 2x
+                  "
+                  media="(man-width: 767px)"
+                />
+                <img
+                  src="./images/uidesigner.jpg"
+                  alt="Михайло Єрмаков"
+                  width="450"
+                  class="team-pic"
+                />
+              </picture>
               <h3 class="team-name">Михайло Єрмаков</h3>
               <p class="team-text" lang="en">UI Designer</p>
               <ul class="team-links">

@@ -8,12 +8,16 @@
 .footer-list {
   margin-top: 20px;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 .footer-item {
@@ -23,6 +27,11 @@
   @media screen and (min-width: 1200px) {
     margin-bottom: 9px;
     text-align: start;
+  }
+}
+.footer-item:last-child {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
   }
 }
 .footer-contact {
@@ -48,6 +57,12 @@
   }
   @media screen and (min-width: 1200px) {
     display: flex;
+  }
+}
+.container-address {
+  @media screen and (max-width: 767px) {
+    // margin-top: 20px;
+    margin-bottom: 60px;
   }
 }
 // .container-address {
