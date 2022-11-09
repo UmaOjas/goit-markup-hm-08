@@ -629,6 +629,7 @@ body {
 @media screen and (min-width: 768px) {
   .team-item {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -639,8 +640,10 @@ body {
   }
 }
 
-.team-item:last-child {
-  margin-bottom: 0px;
+@media screen and (max-width: 767px) {
+  .team-item:last-child {
+    margin-bottom: 0px;
+  }
 }
 
 .team-name {

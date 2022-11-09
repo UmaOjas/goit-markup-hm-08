@@ -34,6 +34,7 @@
   //width: calc((100% - 90px) / 4);
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
+    margin-bottom: 0px;
   }
   @media screen and (min-width: 1200px) {
     width: calc((100% - 30px) / 4);
@@ -42,7 +43,9 @@
   }
 }
 .team-item:last-child {
-  margin-bottom: 0px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0px;
+  }
 }
 .team-name {
   font-weight: 500;
