@@ -344,8 +344,14 @@ body {
 
 .header__logo {
   margin-right: 88px;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header__logo {
@@ -437,7 +443,7 @@ body {
 @media screen and (min-width: 1200px) {
   .text {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0px;
   }
 }
 
@@ -629,7 +635,12 @@ body {
   .team-item {
     width: calc((100% - 30px) / 4);
     padding-bottom: 30px;
+    margin-bottom: 0px;
   }
+}
+
+.team-item:last-child {
+  margin-bottom: 0px;
 }
 
 .team-name {
@@ -722,12 +733,6 @@ body {
 
 .footer-list {
   margin-top: 20px;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .footer-list {
-    margin-bottom: 0px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer-list {

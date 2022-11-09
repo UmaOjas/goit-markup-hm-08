@@ -38,7 +38,11 @@
   @media screen and (min-width: 1200px) {
     width: calc((100% - 30px) / 4);
     padding-bottom: 30px;
+    margin-bottom: 0px;
   }
+}
+.team-item:last-child {
+  margin-bottom: 0px;
 }
 .team-name {
   font-weight: 500;
